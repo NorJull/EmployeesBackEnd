@@ -14,13 +14,11 @@ public class EmployeeDTOFactory {
 		if(ContractTypeName.HOURLY.getDescription().equals(employeeDTO.getContractTypeName())) {
 			HourlySalaryContractEmployee hourlySalaryContractEmployee = new HourlySalaryContractEmployee(employeeDTO.getId(), employeeDTO.getName(), 
 					employeeDTO.getRoleId(), employeeDTO.getRoleName(), employeeDTO.getRoleDescription(), employeeDTO.getHourlySalary(), employeeDTO.getMonthlySalary());
-			hourlySalaryContractEmployee.calculateAnualSalary();
 			return hourlySalaryContractEmployee;		
 			
 		}else if(ContractTypeName.MONTHLY.getDescription().equals(employeeDTO.getContractTypeName())){
 			MonthlySalaryContractEmployee monthlySalaryContractEmployee = new MonthlySalaryContractEmployee(employeeDTO.getId(), employeeDTO.getName(), 
 					employeeDTO.getRoleId(), employeeDTO.getRoleName(), employeeDTO.getRoleDescription(), employeeDTO.getHourlySalary(), employeeDTO.getMonthlySalary());
-			monthlySalaryContractEmployee .calculateAnualSalary();
 			return monthlySalaryContractEmployee;
 		} 
 		

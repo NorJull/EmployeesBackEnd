@@ -13,6 +13,7 @@ public class MonthlySalaryContractEmployee extends Employee {
 	public MonthlySalaryContractEmployee(Integer id, String name, Integer roleId, String roleName,
 			String roleDescription, BigDecimal hourlySalary, BigDecimal monthlySalary) {
 		super(id, name, roleId, roleName, roleDescription, hourlySalary, monthlySalary);
+		this.calculateAnualSalary();
 	}
 
 	public ContractTypeName getContractTypeName() {
