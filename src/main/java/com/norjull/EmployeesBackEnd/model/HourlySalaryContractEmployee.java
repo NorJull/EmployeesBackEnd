@@ -19,5 +19,10 @@ public class HourlySalaryContractEmployee extends Employee {
 		return contractTypeName;
 	}
 
+	@Override
+	public void calculateAnualSalary() {
+		this.setAnualSalary(this.getHourlySalary().multiply(BigDecimal.valueOf(120 * 12)));
+	}
+
 	
 }

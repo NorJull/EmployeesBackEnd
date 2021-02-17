@@ -1,0 +1,7 @@
+com.norjull.EmployeesBackEnd
+com.norjull.EmployeesBackEnd.controller
+com.norjull.EmployeesBackEnd.dto
+com.norjull.EmployeesBackEnd.model
+com.norjull.EmployeesBackEnd.repository
+com.norjull.EmployeesBackEnd.service
+com.norjull.EmployeesBackEnd.testUtil

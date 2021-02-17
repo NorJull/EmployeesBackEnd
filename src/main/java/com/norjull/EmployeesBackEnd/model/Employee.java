@@ -2,7 +2,7 @@ package com.norjull.EmployeesBackEnd.model;
 
 import java.math.BigDecimal;
 
-public class Employee {
+public abstract class Employee {
 
 	private Integer id;
 	
@@ -100,6 +100,10 @@ public class Employee {
 		this.anualSalary = anualSalary;
 	}
 
-	
+	/**
+	 * This method calculates the salary of the employee depending on the type of contract.
+	 * This operation perform in O(1).
+	 */
+	public abstract void calculateAnualSalary();
 	
 }

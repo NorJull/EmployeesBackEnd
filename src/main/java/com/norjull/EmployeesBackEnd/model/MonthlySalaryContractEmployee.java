@@ -19,4 +19,9 @@ public class MonthlySalaryContractEmployee extends Employee {
 		return contractTypeName;
 	}
 
+	@Override
+	public void calculateAnualSalary() {
+		this.setAnualSalary(this.getMonthlySalary().multiply(BigDecimal.valueOf(12)));		
+	}
+
 }
